@@ -218,15 +218,15 @@ body {
 }
 
 .header__container {
-  max-inline-size: 1310;
+  max-inline-size: 1310px;
 }
 
 .header__inner {
   display: flex;
   align-items: start;
-  row-gap: 20;
-  -moz-column-gap: 30;
-  column-gap: 30;
+  row-gap: 20px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
 }
 
 .header__background {
@@ -261,8 +261,8 @@ body {
 .header-nav__list {
   display: flex;
   align-items: center;
-  -moz-column-gap: 20;
-  column-gap: 20;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
 }
 
 .header-nav__link {
@@ -285,7 +285,7 @@ body {
   margin-block-end: min(20px, 10px + 10 * ((100vw - 320px) / 820));
   font-weight: 600;
   color: #0f8105;
-  padding-inline: 20;
+  padding-inline: max(20px, (100vw - 1100px) / 2);
 }
 
 .hero__list {
@@ -300,7 +300,7 @@ body {
   text-align: center;
   color: #0f8105;
   background-color: rgba(255, 255, 255, 0.7);
-  padding-inline: 20;
+  padding-inline: max(20px, (100vw - 1100px) / 2);
 }
 
 .hero-list {
@@ -308,7 +308,7 @@ body {
   font-style: italic;
   text-align: end;
   color: #fff;
-  padding-inline: 20;
+  padding-inline: max(20px, (100vw - 1100px) / 2);
 }
 
 .hero-list__item:not(:last-child) {
@@ -681,7 +681,7 @@ body {
     inline-size: -moz-fit-content;
     inline-size: fit-content;
     margin-inline-start: auto;
-    padding-inline: 60 20;
+    padding-inline: 60px max(20px, (100vw - 1100px) / 2);
     text-align: right;
   }
 
