@@ -218,15 +218,15 @@ body {
 }
 
 .header__container {
-  max-inline-size: 1310px;
+  max-inline-size: 1310;
 }
 
 .header__inner {
   display: flex;
   align-items: start;
-  row-gap: 20px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  row-gap: 20;
+  -moz-column-gap: 30;
+  column-gap: 30;
 }
 
 .header__background {
@@ -261,8 +261,8 @@ body {
 .header-nav__list {
   display: flex;
   align-items: center;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+  -moz-column-gap: 20;
+  column-gap: 20;
 }
 
 .header-nav__link {
@@ -285,7 +285,7 @@ body {
   margin-block-end: min(20px, 10px + 10 * ((100vw - 320px) / 820));
   font-weight: 600;
   color: #0f8105;
-  padding-inline: max(20px, (100vw - 1100px) / 2);
+  padding-inline: 20;
 }
 
 .hero__list {
@@ -300,7 +300,7 @@ body {
   text-align: center;
   color: #0f8105;
   background-color: rgba(255, 255, 255, 0.7);
-  padding-inline: max(20px, (100vw - 1100px) / 2);
+  padding-inline: 20;
 }
 
 .hero-list {
@@ -308,7 +308,7 @@ body {
   font-style: italic;
   text-align: end;
   color: #fff;
-  padding-inline: max(20px, (100vw - 1100px) / 2);
+  padding-inline: 20;
 }
 
 .hero-list__item:not(:last-child) {
@@ -681,7 +681,7 @@ body {
     inline-size: -moz-fit-content;
     inline-size: fit-content;
     margin-inline-start: auto;
-    padding-inline: 60px max(20px, (100vw - 1100px) / 2);
+    padding-inline: 60 20;
     text-align: right;
   }
 
@@ -701,8 +701,8 @@ body {
 }
 
 @media (max-width: 992px) {
-  .hero-list {
-    -webkit-text-stroke: 0.75px #0f8105;
+  .hero-list__item {
+    text-shadow: rgb(15, 129, 5) 2px 0 0, rgb(15, 129, 5) 1.75517px 0.958851px 0, rgb(15, 129, 5) 1.0806px 1.68294px 0, rgb(15, 129, 5) 0.141474px 1.99499px 0, rgb(15, 129, 5) -0.832294px 1.81859px 0, rgb(15, 129, 5) -1.60229px 1.19694px 0, rgb(15, 129, 5) -1.97998px 0.28224px 0, rgb(15, 129, 5) -1.87291px -0.701566px 0, rgb(15, 129, 5) -1.30729px -1.5136px 0, rgb(15, 129, 5) -0.421592px -1.95506px 0, rgb(15, 129, 5) 0.567324px -1.91785px 0, rgb(15, 129, 5) 1.41734px -1.41108px 0, rgb(15, 129, 5) 1.92034px -0.558831px 0;
   }
 
   .footer__decor {
