@@ -564,7 +564,6 @@ body {
 
 .technology__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
   row-gap: 40px;
   -moz-column-gap: min(20px, 10px + 10 * ((100vw - 320px) / 820));
   column-gap: min(20px, 10px + 10 * ((100vw - 320px) / 820));
@@ -674,6 +673,10 @@ body {
   .advantages__background img {
     -o-object-position: 100% 50%;
     object-position: 100% 50%;
+  }
+
+  .technology__list {
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
   }
 
   .technology-article__inner {
