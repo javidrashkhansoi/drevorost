@@ -234,7 +234,6 @@ body {
   inset-block-start: 0;
   inset-inline: 0;
   z-index: -1;
-  block-size: min(826px, 281px + 545 * ((100vw - 320px) / 448));
 }
 
 .header__background img {
@@ -243,6 +242,8 @@ body {
 }
 
 .header-logo {
+  position: relative;
+  z-index: 51;
   flex: 0 0 auto;
   font-size: 0;
 }
@@ -256,6 +257,19 @@ body {
 .header-logo__image img {
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.header-nav {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-block: 11px;
+  padding-inline: min(125px, 50px + 75 * ((100vw - 768px) / 432));
+  background-image: linear-gradient(90deg, rgba(212, 237, 183, 0.8) 0%, rgba(232, 246, 218, 0.8) 20.97%, rgba(200, 231, 167, 0.8) 50.14%, rgba(134, 195, 76, 0.8) 60.28%, rgba(95, 185, 8, 0.8) 83.5%, rgba(36, 117, 1, 0.8) 100%);
 }
 
 .header-nav__list {
@@ -548,8 +562,12 @@ body {
   margin-block-end: min(20px, 10px + 10 * ((100vw - 320px) / 820));
 }
 
-.technology__item:not(:last-child) {
-  margin-block-end: min(20px, 10px + 10 * ((100vw - 320px) / 820));
+.technology__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  row-gap: 40px;
+  -moz-column-gap: min(20px, 10px + 10 * ((100vw - 320px) / 820));
+  column-gap: min(20px, 10px + 10 * ((100vw - 320px) / 820));
 }
 
 .technology-article__title {
@@ -617,7 +635,7 @@ body {
 
 @media (min-width: 768.1px) {
   .header {
-    padding-block-end: min(246px, 90px + 156 * ((100vw - 768px) / 372));
+    padding-block: 55px min(246px, 90px + 156 * ((100vw - 768px) / 372));
   }
 
   .header__background img {
@@ -690,6 +708,28 @@ body {
   }
 }
 
+@media (min-width: 1200.1px) {
+  .header-nav {
+    padding-inline: max(28px, 125px + -97 * ((100vw - 1200px) / 720));
+  }
+}
+
+@media (min-width: 1440.1px) {
+  .header {
+    padding-block-start: 15px;
+  }
+
+  .header__background {
+    aspect-ratio: 1400/826;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header__background {
+    block-size: min(826px, 281px + 545 * ((100vw - 320px) / 448));
+  }
+}
+
 @media (max-width: 1309px) {
   .header__inner {
     flex-direction: column-reverse;
@@ -711,6 +751,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+
   .hero__text {
     margin-inline-start: auto;
   }
